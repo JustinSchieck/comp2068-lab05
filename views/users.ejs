@@ -1,0 +1,36 @@
+<!--
+@Author: Justin Schieck
+@Date:   2017-03-09T23:43:38-05:00
+@Email:  schieck91@gmail.com
+@Last modified by:   Justin Schieck
+@Last modified time: 2017-03-09T23:52:44-05:00
+-->
+
+
+<% include partials/header.ejs %>
+    <h1>Users</h1>
+  <!--Users Table-->
+    <table>
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (var i = 0; i < accounts.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= accounts[i]._id %>
+                    </td>
+                    <td>
+                        <%= accounts[i].username %>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+    </body>
+
+    </html>
+<% include partials/footer.ejs %>
