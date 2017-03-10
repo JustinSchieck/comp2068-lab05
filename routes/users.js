@@ -3,7 +3,7 @@
 * @Date:   2017-03-09T23:09:15-05:00
 * @Email:  schieck91@gmail.com
 * @Last modified by:   Justin Schieck
-* @Last modified time: 2017-03-09T23:56:16-05:00
+* @Last modified time: 2017-03-09T23:57:15-05:00
 */
 
 
@@ -27,7 +27,7 @@ router.get('/', function(req, res, next) {
                 user: accounts
             });
         }
-    });
+    }); 
 });
 
 module.exports = router;
